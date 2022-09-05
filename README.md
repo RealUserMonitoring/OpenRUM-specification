@@ -15,7 +15,7 @@
   - [事件-应用异常（Exception）](./semantic_conventions/event_exception.md)
   - [事件-系统（System）](./semantic_conventions/event_system.md)
   - [事件-自定义（Custom）](./semantic_conventions/event_custom.md)
-  - [事件-现场属性（Common）](./semantic_conventions/event_common.md)
+  - [事件-现场属性（Scene）](./semantic_conventions/event_common.md)
 
 ## Acronym
 
