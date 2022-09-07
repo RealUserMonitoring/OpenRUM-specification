@@ -29,7 +29,7 @@
 | js_error.file | string | 发生错误的JS文件 [2] | test.js | Required |
 | js_error.line | int | JS错误行号 | 100 | Required |
 | js_error.column | int | JS错误列号 | 10 | Required |
-| js_error.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_common.md) | Required |
+| js_error.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_scene.md) | Required |
 
 [1]：JS错误的堆栈通畅不涉及线程，不需要使用数组接口记录多个线程，使用对象记录堆栈即可。
 
@@ -46,7 +46,7 @@
 | anr.trace | string | ANR内存现场 | | Required |
 | anr.message | string | ANR内存环境信息 | | Recommended |
 | anr.class | string | 发生ANR的类 | ComplexLogicActivity | Required |
-| anr.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_common.md) | Required |
+| anr.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_scene.md) | Required |
 
 ## 应用卡顿（Lag）
 
@@ -55,7 +55,7 @@
 | lag.view | string | 发生卡顿的视图名称 | LoginActivity | Recommended |
 | lag.call_stacks | array | 应用卡顿调用栈 | 详见[应用异常调用栈（CallStack）](#应用异常调用栈callstack)定义 | Required |
 | lag.binary_images | array | 应用二进制文件信息 | 详见[二进制文件信息（BinaryImage）](#二进制文件信息binaryimage)定义 | Conditionally Required |
-| lag.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_common.md) | Required |
+| lag.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_scene.md) | Required |
 
 ## 应用异常调用栈（CallStack）
 
