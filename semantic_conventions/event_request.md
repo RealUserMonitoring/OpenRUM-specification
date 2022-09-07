@@ -17,7 +17,7 @@
 | request.response.header.<key> | string[] | HTTP响应头，<key>是HTTP响应头字段名（小写，"-"符替换为"_"），值是响应头字段对应值。[4] | http.response.header.content_type=["application/json"]; | Recommended |
 | request.timing_data | object | 性能指标 | 详见[性能指标（TimingData）](#http请求性能指标timingdata)定义 | Required |
 | request.error_msg | string | 错误信息[5] | The host name for a URL couldn’t be resolved. | Recommended |
-| request.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_sence.md) | Required |
+| request.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_scene.md) | Required |
 
 [1]：URL中不要携带鉴权信息。如请求为https://username:password@www.bornee.com/，request.url属性应设置https://www.bonree.com/。
 
