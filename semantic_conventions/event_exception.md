@@ -12,7 +12,7 @@
 | crash.thread.id | string | 应用崩溃线程ID [1] | 1234 | Required |
 | crash.call_stacks | object[] | 应用崩溃调用栈 [1] | 详见[应用异常调用栈（CallStack）](#应用异常调用栈callstack)定义 | Required |
 | crash.binary_images | object[] | 应用二进制文件信息 [2] | 详见[二进制文件信息（BinaryImage）](#二进制文件信息binaryimage)定义 | Conditionally Required |
-| crash.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_common.md) | Required |
+| crash.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_scene.md) | Required |
 
 [1]：崩溃调用栈的信息以线程的维度拆分，记录每个线程内的堆栈，崩溃线程ID应于发生崩溃的线程堆栈的call_stack对象中的thread.id保持一致。
 
