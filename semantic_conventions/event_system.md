@@ -1,5 +1,5 @@
 
-# 事件-系统（system）
+# 事件-系统（System）
 
 | Attribute | Type | Description | Examples | Requirement Level |
 | -- | -- | -- | -- | -- |
