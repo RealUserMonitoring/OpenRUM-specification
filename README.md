@@ -11,7 +11,7 @@
   - [事件通用-现场属性（Scene）](./semantic_conventions/event_common_scene.md)
   - [事件-应用行为（Application）](./semantic_conventions/event_application.md)
   - [事件-视图（View）](./semantic_conventions/event_view.md)
-  - [事件-用户操作（User Action）](./semantic_conventions/event_user_action.md)
+  - [事件-用户操作（UserAction）](./semantic_conventions/event_user_action.md)
   - [事件-网络请求（Resource）](./semantic_conventions/event_resource.md)
   - [事件-应用异常（Exception）](./semantic_conventions/event_exception.md)
   - [事件-卡顿（LongTask）](./semantic_conventions/event_longTask.md)
