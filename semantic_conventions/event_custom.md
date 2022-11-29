@@ -1,5 +1,5 @@
 
-# 事件-自定义（custom）
+# 事件-自定义（Custom）
 
 | Attribute | Type | Description | Examples | Requirement Level |
 | -- | -- | -- | -- | -- |
