@@ -15,7 +15,7 @@
   - [事件-用户操作（User Action）](./semantic_conventions/event_user_action.md)
   - [事件-网络请求（Resource）](./semantic_conventions/event_resource.md)
   - [事件-应用异常（Exception）](./semantic_conventions/event_exception.md)
-  - [事件-卡顿（longTask）](./semantic_conventions/event_longTask.md)
+  - [事件-卡顿（LongTask）](./semantic_conventions/event_longTask.md)
   - [事件-系统（System）](./semantic_conventions/event_system.md)
   - [事件-自定义（Custom）](./semantic_conventions/event_custom.md)
   
