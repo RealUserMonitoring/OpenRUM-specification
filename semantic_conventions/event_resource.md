@@ -1,5 +1,5 @@
 
-# 事件-网络请求（resource）
+# 事件-网络请求（Resource）
 
 | Attribute | Type | Description | Examples | Requirement Level |
 | -- | -- | -- | -- | -- |
