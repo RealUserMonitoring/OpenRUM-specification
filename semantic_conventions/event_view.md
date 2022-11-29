@@ -9,16 +9,18 @@
 | view.name | string | 视图名称 [2] | LoginActivity | Recommended |
 | view.url | string | 页面URL [3] | https://www.bonree.com | Conditionally Required |
 | view.type | int | 视图类型 [4] | 1;2;3; | Required |
-| view.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_scene.md) | Required |
+| view.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_common_scene.md) | Required |
 
 ## 视图加载
 
 | Attribute | Type | Description | Examples | Requirement Level |
 | -- | -- | -- | -- | -- |
 | view.load.time | int | 视图加载耗时，单位:ms [5] | 200 | Required |
+| view.largest_contentful_paint | int | 页面加载时间线中呈现视口中最大 DOM 对象（屏幕上可见）的时刻 | 2.5 | Recommended |
+| view.first_input_delay | int | 从用户第一次与页面交互到浏览器响应之间经过的时间。 | 100 | Recommended |
+| view.cumulative_layout_shift | int | 量化由于动态加载的内容（例如，第三方广告）而导致的意外页面移动，其中 0 表示没有发生变化。 | 0.1 | Recommended |
 | view.load.snapshots | object[] | 视图加载线程方法快照，线程方法对象数组 | 详见[线程方法快照（Snapshot）](./event_user_action.md#线程方法快照snapshot) [6] | Conditionally Required |
-| view.load.timing_data | object | 页面主文档加载性能 | 详见[性能指标（TimingData）](./event_request.md#http请求性能指标timingdata)定义 [7] | Conditionally Required |
-| view.load.resources | object[] | 页面元素性能集合，Resource对象数组 | 详见[元素性能（Resource）](#元素性能resource) [8] | Conditionally Required |
+| view.load.timing_data | object | 页面主文档加载性能 | 详见[性能指标（TimingData）](./event_resource.md#http请求性能指标timingdata)定义 [7] | Conditionally Required |
 
 ## 视图退出
 
@@ -26,19 +28,6 @@
 | -- | -- | -- | -- | -- |
 | view.exit.duration | int | 视图停留时长，单位:ms | 10000 | Required |
 
-## 元素性能（Resource）
-
-指标定义参考[W3C规范](https://www.w3.org/TR/navigation-timing/#performancetiming)。
-
-| Attribute | Type | Requirement Level |
-| -- | -- | -- |
-| resource.name | string | Required |
-| resource.start_time | int | Required |
-| resource.duration | int | Required |
-| resource.transfer_size | int | Required |
-| resource.encoded_body_size | int | Required |
-| resource.decoded_body_size | int | Required |
-| resource.timing_data [9] | object | Required |
 
 [1]：标识每次视图加载的唯一标识，可以任意设置，但是要求每次加载必须唯一，即使相同页面的多次加载也应设置不同的ID。
 
@@ -64,4 +53,3 @@
 
 [8]：当视图类型为web页面时，记录页面内元素的加载性能。指标可参考[W3C规范](https://www.w3.org/TR/navigation-timing/#performancetiming)。
 
-[9]：resource.timing_data定义详见[性能指标（TimingData）](./event_request.md#http请求性能指标timingdata)。
