@@ -11,8 +11,8 @@
 | exception.caused_by | string | 应用崩溃原因 | Invalid array length | Required |
 | exception.view | string | 发生视图 | LoginActivity | Required |
 | exception.thread.id | string | 应用崩溃线程ID [1] | 1234 | Required |
-| exception.call_stacks | object[] | 应用崩溃调用栈 [1] | 详见[应用异常调用栈（CallStack）](#应用异常调用栈callstack)定义 | Required |
-| exception.binary_images | object[] | 应用二进制文件信息 [2] | 详见[二进制文件信息（BinaryImage）](#二进制文件信息binaryimage)定义 | Conditionally Required |
+| exception.call_stacks | array | 应用崩溃调用栈 [1] | 详见[应用异常调用栈（CallStack）](#应用异常调用栈callstack)定义 | Required |
+| exception.binary_images | array | 应用二进制文件信息 [2] | 详见[二进制文件信息（BinaryImage）](#二进制文件信息binaryimage)定义 | Conditionally Required |
 | exception.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_common_scene.md) | Required |
 | exception.file | string | 发生错误的文件 [2] | test.js | Required |
 | exception.line | int | 错误行号 | 100 | Required |
