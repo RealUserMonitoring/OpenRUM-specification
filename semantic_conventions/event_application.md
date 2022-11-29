@@ -1,5 +1,5 @@
 
-# 事件-应用行为（application）
+# 事件-应用行为（Application）
 
 ## 应用公共属性
 
