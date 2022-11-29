@@ -1,5 +1,5 @@
 
-# 会话-应用（application）
+# 会话-应用（Application）
 
 ## Common Attributes
 
