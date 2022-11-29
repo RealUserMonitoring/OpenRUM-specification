@@ -1,5 +1,5 @@
 
-# 事件-应用异常（exception）
+# 事件-应用异常（Exception）
 
 ## 应用崩溃（Crash）、JS错误（JSError）
 
