@@ -6,12 +6,13 @@
 | Attribute | Type | Description | Examples | Requirement Level |
 | -- | -- | -- | -- | -- |
 | action.id | string | 用户操作唯一标识 [1] | 123123 | Required |
+| action.type | string | 操作类型  | 0:其他 1:点击,2:手势，3:键盘，4:输入 | Required |
 | action.name | string | 用户操作控件名称 [2] | 登录 | Required |
 | action.method_info | string | 用户操作方法信息 | onClick() | Required |
 | action.view | string | 操作控件所在视图  | LoginActivity | Required |
 | action.duration | int | 操作耗时，单位:ms [3] | 200 | Required |
 | action.snapshots | object[] | 操作线程方法快照，线程方法对象数组 [4] | 详见[线程方法快照（Snapshot）](#线程方法快照snapshot) | Recommended |
-| action.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_scene.md) | Required |
+| action.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_common_scene.md) | Required |
 
 [1]：标识每次操作的唯一标识，可以任意设置，要求每次操作必须唯一，即使相同控件的多次操作也应设置不同的ID。
 
