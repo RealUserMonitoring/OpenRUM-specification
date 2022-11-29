@@ -1,5 +1,5 @@
 
-# 会话-用户（user）
+# 会话-用户（User）
 
 ## Common Attributes
 
