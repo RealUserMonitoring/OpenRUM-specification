@@ -1,5 +1,5 @@
 
-# 事件-卡顿（longTask）
+# 事件-卡顿（LongTask）
 
 ## ANR,卡顿
 
