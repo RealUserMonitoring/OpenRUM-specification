@@ -8,7 +8,7 @@
   - [会话-应用（Application）](./semantic_conventions/session_application.md)
   - [会话-用户（User）](./semantic_conventions/session_user.md)
   - [会话-设备（Device）](./semantic_conventions/session_device.md)
-  - [事件通用-现场属性（Scene）](./semantic_conventions/event_common_scene.md)
+  - [通用-现场属性（Scene）](./semantic_conventions/common_scene.md)
   - [事件-应用行为（Application）](./semantic_conventions/event_application.md)
   - [事件-视图（View）](./semantic_conventions/event_view.md)
   - [事件-用户操作（UserAction）](./semantic_conventions/event_user_action.md)
