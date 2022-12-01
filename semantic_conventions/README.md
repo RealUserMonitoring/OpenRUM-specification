@@ -1,5 +1,5 @@
 
-# 语义约定（semantic conventions）
+# 语义约定（Semantic Conventions）
 
 ## 语义分类：
 
