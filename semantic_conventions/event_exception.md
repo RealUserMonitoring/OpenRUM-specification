@@ -13,10 +13,11 @@
 | exception.thread.id | string | 应用崩溃线程ID [1] | 1234 | Required |
 | exception.call_stacks | array | 应用崩溃调用栈 [1] | 详见[应用异常调用栈（CallStack）](#应用异常调用栈callstack)定义 | Required |
 | exception.binary_images | array | 应用二进制文件信息 [2] | 详见[二进制文件信息（BinaryImage）](#二进制文件信息binaryimage)定义 | Conditionally Required |
-| exception.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_common_scene.md) | Required |
+| exception.scene | object | 事件发生时的设备状态信息 | 详见[现场属性](./common_scene.md) | Required |
 | exception.file | string | 发生错误的文件 [2] | test.js | Required |
 | exception.line | int | 错误行号 | 100 | Required |
 | exception.column | int | 错误列号 | 10 | Required |
+
 [1]：崩溃调用栈的信息以线程的维度拆分，记录每个线程内的堆栈，崩溃线程ID应于发生崩溃的线程堆栈的call_stack对象中的thread.id保持一致。
 
 [2]：iOS系统下发生的崩溃会使用到二进制文件信息，用于崩溃符号解析。

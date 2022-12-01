@@ -9,7 +9,7 @@
 | view.name | string | 视图名称 [2] | LoginActivity | Recommended |
 | view.url | string | 页面URL [3] | https://www.bonree.com | Conditionally Required |
 | view.type | int | 视图类型 [4] | 1;2;3; | Required |
-| view.scene.(现场属性) | object | 事件发生时的设备状态信息 | 详见[现场属性](./event_common_scene.md) | Required |
+| view.scene | object | 事件发生时的设备状态信息 | 详见[现场属性](./common_scene.md) | Required |
 
 ## 视图加载
 
