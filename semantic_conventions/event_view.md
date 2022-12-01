@@ -16,9 +16,9 @@
 | Attribute | Type | Description | Examples | Requirement Level |
 | -- | -- | -- | -- | -- |
 | view.load.time | int | 视图加载耗时，单位:ms [5] | 200 | Required |
-| view.lcp | int | 页面加载时间线中呈现视口中最大 DOM 对象（屏幕上可见）的时刻 https://web.dev/optimize-lcp/ | 2.5 | Recommended |
-| view.fid | int | 从用户第一次与页面交互到浏览器响应之间经过的时间。 https://web.dev/optimize-fid/ | 100 | Recommended |
-| view.cls | int | 量化由于动态加载的内容（例如，第三方广告）而导致的意外页面移动，其中 0 表示没有发生变化。 https://web.dev/optimize-cls/ | 0.1 | Recommended |
+| view.lcp | int | largest_contentful_paint：页面加载时间线中呈现视口中最大 DOM 对象（屏幕上可见）的时刻  https://web.dev/optimize-lcp/ | 2.5 | Recommended |
+| view.fid | int |  first_input_delay：从用户第一次与页面交互到浏览器响应之间经过的时间。  https://web.dev/optimize-fid/ | 100 | Recommended |
+| view.cls | int | cumulative_layout_shift：量化由于动态加载的内容（例如，第三方广告）而导致的意外页面移动，其中 0 表示没有发生变化。  https://web.dev/optimize-cls/ | 0.1 | Recommended |
 | view.load.snapshots | object[] | 视图加载线程方法快照，线程方法对象数组 | 详见[线程方法快照（Snapshot）](./event_user_action.md#线程方法快照snapshot) [6] | Conditionally Required |
 | view.load.timing_data | object | 页面主文档加载性能 | 详见[性能指标（TimingData）](./event_resource.md#http请求性能指标timingdata)定义 [7] | Conditionally Required |
 
