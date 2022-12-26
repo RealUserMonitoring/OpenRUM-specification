@@ -36,5 +36,5 @@
 | Attribute | Type | Description | Examples | Requirement Level |
 | -- | -- | -- | -- | -- |
 | method.name | string | 方法名称 | 123123 | Required |
-| method.start_time | int | 方法执行开始时间戳，单位:ms | 1660199506723 | Required |
-| method.end_time | int | 方法执行结束时间戳，单位:ms | 1660199506923 | Required |
+| method.start_time | long | 方法执行开始时间戳，单位:ms | 1660199506723 | Required |
+| method.end_time | long | 方法执行结束时间戳，单位:ms | 1660199506923 | Required |
