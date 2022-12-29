@@ -5,22 +5,19 @@
 
 | Attribute | Type | Description | Examples | Requirement Level |
 | -- | -- | -- | -- | -- |
-| action.id | string | 用户操作唯一标识 [1] | 123123 | Required |
 | action.type | string | 操作类型  | 0:其他 1:点击,2:手势，3:键盘，4:输入 | Required |
-| action.name | string | 用户操作控件名称 [2] | 登录 | Required |
+| action.name | string | 用户操作控件名称 [1] | 登录 | Required |
 | action.method_info | string | 用户操作方法信息 | onClick() | Required |
 | action.view | string | 操作控件所在视图  | LoginActivity | Required |
-| action.duration | int | 操作耗时，单位:ms [3] | 200 | Required |
-| action.snapshots | object[] | 操作线程方法快照，线程方法对象数组 [4] | 详见[线程方法快照（Snapshot）](#线程方法快照snapshot) | Recommended |
+| action.duration | int | 操作耗时，单位:ms [2] | 200 | Required |
+| action.snapshots | object[] | 操作线程方法快照，线程方法对象数组 [3] | 详见[线程方法快照（Snapshot）](#线程方法快照snapshot) | Recommended |
 | action.scene | object | 事件发生时的设备状态信息 | 详见[现场属性](./common_scene.md) | Required |
 
-[1]：标识每次操作的唯一标识，可以任意设置，要求每次操作必须唯一，即使相同控件的多次操作也应设置不同的ID。
+[1]：操作控件名称推荐使用控件的标题或者类名，对于敏感信息如自定义的密码输入按钮、验证码输入框等控件应做脱敏处理。
 
-[2]：操作控件名称推荐使用控件的标题或者类名，对于敏感信息如自定义的密码输入按钮、验证码输入框等控件应做脱敏处理。
+[2]：操作耗时推荐使用点击操作的响应方法的执行耗时，也可结合业务相关流程，以关键业务节点作为操作的耗时。
 
-[3]：操作耗时推荐使用点击操作的响应方法的执行耗时，也可结合业务相关流程，以关键业务节点作为操作的耗时。
-
-[4]：操作线程方法快照可以记录操作耗时表示的过程中的关键方法执行所在的线程以及方法名称、执行耗时等信息，如视图生命周期，数据IO接口，数据解析方法等。
+[3]：操作线程方法快照可以记录操作耗时表示的过程中的关键方法执行所在的线程以及方法名称、执行耗时等信息，如视图生命周期，数据IO接口，数据解析方法等。
 
 ## 线程方法快照（Snapshot）
 
