@@ -20,6 +20,8 @@
 | resource.timing_data | object | 性能指标 | 详见[性能指标（TimingData）](#http请求性能指标timingdata)定义 | Required |
 | resource.error_msg | string | 错误信息[5] | The host name for a URL couldn’t be resolved. | Recommended |
 | resource.scene | object | 事件发生时的设备状态信息 | 详见[现场属性](./common_scene.md) | Required |
+| resource.type | string | 采集的资源类型 (eg: css, javascript, media, xhr, image，navigation) | css | Required |
+| resource.duration | int | 加载资源所花费的全部时间ms（responseEnd - redirectStart） | 100 | Required |
 
 [1]：URL中不要携带鉴权信息。如请求为https://username:password@www.bornee.com/，request.url属性应设置https://www.bonree.com/。
 
