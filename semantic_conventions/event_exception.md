@@ -6,7 +6,8 @@
 | Attribute | Type | Description | Examples | Requirement Level |
 | -- | -- | -- | -- | -- |
 | exception.id | string | 应用崩溃唯一标识 | 123123 | Required |
-| exception.type | string | 应用崩溃类型 | RangeError | Required |
+| exception.name | string | 应用崩溃名称 | RangeError | Required |
+| exception.type | string | 应用崩溃类型包括 crash（崩溃）、 ANR（无响应）、custom（自定义错误）error（执行错误） | crash | Required |
 | exception.source | string | 错误来源 | console,network | Required |
 | exception.caused_by | string | 应用崩溃原因 | Invalid array length | Required |
 | exception.view | string | 发生视图 | LoginActivity | Required |
